@@ -4,6 +4,7 @@ import Stopwatch from "../components/timers/Stopwatch";
 import Countdown from "../components/timers/Countdown";
 import XY from "../components/timers/XY";
 import Tabata from "../components/timers/Tabata";
+import Ladder from "../components/timers/Ladder";
 
 const Timers = styled.div`
   display: flex;
@@ -26,6 +27,7 @@ const TimersView = () => {
     { title: "Countdown", C: <Countdown /> },
     { title: "XY", C: <XY /> },
     { title: "Tabata", C: <Tabata /> },
+    { title: "Ladder", C: <Ladder /> },
   ];
 
   return (
