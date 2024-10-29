@@ -1,3 +1,4 @@
-const Ladder = () => null;
-
+const Ladder = () => {
+    return <div>H</div>;
+};
 export default Ladder;
