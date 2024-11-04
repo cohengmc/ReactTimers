@@ -21,7 +21,7 @@ const Countdown = () => {
             }
             interval = setInterval(() => {
                 setSeconds(prevseconds => prevseconds - 1);
-            }, 1000);
+            }, 1000)
         } else if (!isRunning && seconds !== 0 && interval != null) {
             clearInterval(interval);
         }

@@ -102,7 +102,7 @@ const Tabata = () => {
         <div className="clockContainer">
             <div>
                 {isInputSet ? (
-                    <div className='tabataInfo'>
+                    <div className="tabataInfo">
                         <p className="supportingText">Rounds Remaining: {roundsRemaining}</p>
                         <p className={`supportingText ${isWorking ? 'activeText' : ''}`}>{isWorking ? 'Active' : 'Rest'}</p>
                     </div>

@@ -111,7 +111,7 @@ th {
   border-right: none;
 }
 
-.button-group input[type="radio"]:checked + label {
+.button-group input[type="radio"]:checked+label {
   background-color: red;
   border: 1px solid red;
   color: whitesmoke;
