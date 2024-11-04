@@ -21,7 +21,7 @@ const XY = () => {
             if (roundsRemaining === Number(roundAmountInput)) {
                 setRoundsRemaining(roundsRemaining - 1);
             }
-            if (seconds < 0) {
+            if (seconds === 0) {
                 if (roundsRemaining === 0) {
                     setIsRunning(false);
                     setIsDone(true);
