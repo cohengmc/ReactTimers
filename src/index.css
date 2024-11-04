@@ -43,32 +43,34 @@ th {
   gap: 1em;
 }
 
-
+.supportingText {
+  font-size: 6vw;
+  margin: .1em;
+  font-feature-settings: "tnum";
+  font-variant-numeric: 'tabular-nums lining-nums';
+  color: red;
+}
 
 .btn {
-  background-color: white;
+  background-color: whitesmoke;
   border: none;
   border-radius: 8px;
   padding: .5em;
-  width: fit-content;
-  height: fit-content;
+  cursor: pointer;
 }
 
 .btn:hover {
   transform: scale(1.1);
 }
 
-.btn:active{
+.btn:active {
   background-color: lightgray;
 }
 
-.btnNum {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
+.txtBtn {
   margin: 0;
+  min-width: 1em;
+  min-height: 1em;
   font-weight: bolder;
   font-size: large;
 }
@@ -82,5 +84,45 @@ th {
   gap: .8em;
   justify-content: space-around;
   flex-wrap: wrap;
+  align-items: center;
+}
+
+.button-group {
+  display: inline-flex;
+  border: 1px solid black;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.button-group input[type="radio"] {
+  display: none;
+}
+
+.button-group label {
+  padding: .5em 1em;
+  cursor: pointer;
+  background-color: whitesmoke;
+  color: red;
+  font-weight: bold;
+  border-right: 1px solid black;
+}
+
+.button-group label:last-of-type {
+  border-right: none;
+}
+
+.button-group input[type="radio"]:checked + label {
+  background-color: red;
+  border: 1px solid red;
+  color: whitesmoke;
+}
+
+.activeText {
+  color: lightgreen;
+}
+
+.tabataInfo {
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }

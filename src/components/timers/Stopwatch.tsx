@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
-import { formatTime } from '../../utils/helpers';
 import HomeBtns from '../generic/HomeBtns';
+import TimerDisplay from '../generic/TimerDisplay';
 
 const Stopwatch = () => {
     const [seconds, setSeconds] = useState(0);
@@ -31,7 +31,7 @@ const Stopwatch = () => {
 
     return (
         <div className="clockContainer">
-            <h1 className="clockStyle">{formatTime(seconds)}</h1>
+            <TimerDisplay seconds={seconds} />
             <HomeBtns timeChange={timeChange} handleReset={handleReset} isRunning={isRunning} />
         </div>
     );

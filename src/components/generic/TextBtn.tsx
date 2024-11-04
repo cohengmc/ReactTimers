@@ -1,9 +1,14 @@
-const TextBtn = ({ name }: { name: string }) => {
+interface BtnProps {
+    name: string;
+    onClick: (event: React.MouseEvent<HTMLButtonElement>) => void;
+}
+
+
+const TextBtn = ({ name, onClick }: BtnProps) => {
     return (
         <div>
-            {' '}
-            <button className="btn">
-                <p className="btnNum">{name}</p>
+            <button onClick={onClick} className="btn">
+                <p className="txtBtn">{name}</p>
             </button>
         </div>
     );
