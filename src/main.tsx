@@ -12,9 +12,6 @@ const PageIndex = () => {
             <h1>Assignment</h1>
             <ul>
                 <li>
-                    <Link to="/">Timers</Link>
-                </li>
-                <li>
                     <Link to="/docs">Documentation</Link>
                 </li>
             </ul>
